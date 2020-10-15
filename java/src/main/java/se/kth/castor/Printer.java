@@ -42,7 +42,7 @@ public class Printer {
 		print((short) f.getNumeratorAsInt(), (short) f.getDenominatorAsInt());
 	}
 
-	public void print(short num, short den) {
+	/*public void print(short num, short den) {
 		//System.out.print(" " + num + "/" + den + " ");
 		int bit = 15;
 		for(int j = 0; j < 4; j++) {
@@ -60,6 +60,36 @@ public class Printer {
 		for(int j = 0; j < 4; j++) {
 			for(int k = 0; k < 4; k++) {
 				if((den & pow(2, bit)) > 0) {
+					setColorT.run();
+				} else {
+					setColorF.run();
+				}
+				printPixel.accept(new Pixel(cell * cellWidth + k, (2 * line + 1) * cellHeigth + j));
+				bit--;
+			}
+		}
+		lastPixel = (cell * cellWidth + 3) + "," + ((2 * line + 1) * cellHeigth + 3);
+		cell++;
+	}*/
+
+	public void print(short num, short den) {
+		//System.out.print(" " + num + "/" + den + " ");
+		int bit = 15;
+		for(int j = 0; j < 4; j++) {
+			for(int k = 0; k < 4; k++) {
+				if(((num & pow(2, bit)) > 0) ^ ((j % 2 == 0) ^ (k % 2 == 0))) {
+					setColorT.run();
+				} else {
+					setColorF.run();
+				}
+				printPixel.accept(new Pixel(cell * cellWidth + k, 2 * line * cellHeigth + j));
+				bit--;
+			}
+		}
+		bit = 15;
+		for(int j = 0; j < 4; j++) {
+			for(int k = 0; k < 4; k++) {
+				if(((den & pow(2, bit)) > 0) ^ ((j % 2 == 0) ^ (k % 2 == 0))) {
 					setColorT.run();
 				} else {
 					setColorF.run();

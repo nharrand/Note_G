@@ -15,6 +15,8 @@ public class App  extends PApplet {
     static int[] hs = {56, 168, 368, 656, 1032, 1496, 2048, 2688, 3416, 4232, 4232};
     static int[] hs2 = {56, 176, 376, 664, 1040, 1504, 2056, 2696, 3424, 4240, 4240};
 
+    //"#152A84", "#776EAA", "#201315", "#DB1D6B", "#CDE4CF", "#008460", "#DBE479", "#F1C42F", "#E22733"
+
     public void settings(){
         size(width, hs[n]);
     }
@@ -22,12 +24,12 @@ public class App  extends PApplet {
     public void setup() {
         Printer p = new Printer(
                 () -> {
-                    fill(0xFF,0,0);
-                    stroke(0xFF,0,0);
+                    fill(0x15,0x2A,0x84);//"#CDE4CF"
+                    stroke(0x15,0x2A,0x84);
                 },
                 () -> {
-                    fill(0,0,0xFF);
-                    stroke(0,0,0xFF);
+                    fill(0x77,0x6E,0xAA);//"#776EAA"
+                    stroke(0x77,0x6E,0xAA);
                 },
                 pixel -> rect(pixel.x, pixel.y, pixel.w, pixel.h)
         );
