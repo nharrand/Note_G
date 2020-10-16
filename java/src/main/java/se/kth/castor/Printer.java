@@ -12,7 +12,7 @@ public class Printer {
 	Runnable setColorT;
 	Runnable setColorF;
 	Consumer<Pixel> printPixel;
-	public String maxRes ="";
+	public String maxRes = "";
 	public String lastPixel = "";
 
 	public Printer(Runnable setColorT, Runnable setColorF, Consumer<Pixel> printPixel) {
@@ -21,17 +21,16 @@ public class Printer {
 		this.printPixel = printPixel;
 	}
 
-	int pow (int a, int b)
-	{
+	int pow (int a, int b) {
 		if ( b == 0)        return 1;
 		if ( b == 1)        return a;
 		if (b % 2 == 0)    return     pow ( a * a, b/2); //even a=(a^2)^b/2
 		else                return a * pow ( a * a, b/2); //odd  a=a*(a^2)^b/2
-
 	}
 
 	public void print(BigFraction[] v) {
 		for(int i = 1; i < v.length; i++) {
+			//System.out.println("V" + i + " = " + v[i]);
 			print(v[i]);
 		}
 		maxRes = (cell * cellWidth) + "x" + (2 * line * cellHeigth);
