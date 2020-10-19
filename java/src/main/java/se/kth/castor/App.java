@@ -58,7 +58,7 @@ public class App  extends PApplet {
     }
 
     public static void main(String[] args) {
-        int a = 4;
+        int a = 8;
         System.out.println("n="+a);
         n = a;
         PApplet.main("se.kth.castor.App");
