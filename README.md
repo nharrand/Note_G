@@ -14,12 +14,17 @@ These values are represented in the knitted pattern. Each value is a fraction of
 | 1 / 1 | ![1 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_1.png) |
 | 2 / 1 | ![2 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_2.png) |
 | 1 / 2 | ![1 over 2](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_1_2.png) |
-|--------|----------------|
 
 You can observe the first line and see the numbers one the first three columns: 1 2 1 and the first value computed by the program 2 2 and 2.
 
 After many steps the program computes the first Bernouilli number (1/6) in column 21. This value will then never change. Then the third Bernouilli nimber (-1 / 30) appears in column 22 and so on.
 On the last line, at the last column the value of the fifth Bernouilli number (5 / 66) appears.
+
+| Number | Representation |
+|--------|----------------|
+| 1 / 6 | ![0 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_1_6.png) |
+| -1 / 30 | ![1 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_-1_30.png) |
+| 5 / 66 | ![2 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_5_66.png) |
 
 
 
