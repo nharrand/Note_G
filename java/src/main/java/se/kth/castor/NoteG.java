@@ -16,9 +16,7 @@ public class NoteG {
 		}
 		v[1] = new BigFraction(1);
 		v[2] = new BigFraction(2);
-		//v[3] = new BigFraction(n);
 		v[3] = new BigFraction(1);
-		//v[3] = 1; // n = 1
 	}
 
 	public Number run() {
@@ -78,12 +76,7 @@ public class NoteG {
 					v[10] = v[10].subtract(v[1]);
 					p.print(v);
 
-
-					// branch if zero to operation 24
-					//if (v[10].longValue() == 0) break;
-
 					// for each computed result, B = B3 [1], B5 [2], ...
-					//do {
 					while (v[10].longValue() != 0) {
 						// 13: v6 = 2n - 1 [1], 2n - 3 [2], ...
 						v[6] = v[6].subtract(v[1]);
@@ -128,66 +121,15 @@ public class NoteG {
 				// 24: result (-v13) is copied into the results
 				v[20 + i] = v[20 + i].subtract(v[13]);
 				p.print(v);
-				//r = v[20 + 1].doubleValue();
+
 				if(i == n) return v[20 + i];
-				// the result could be printed here
-				// we pass it back to the calling routine
-				//yield r
 
 				// 25: increase n, and reset working variables
 				v[3] = v[1].add(v[3]);
 				v[7] = new BigFraction(0);
 				v[13] = new BigFraction(0);
 				p.print(v);
-				//System.out.println("inner loop");
 			}
-			//System.out.println("outer loop");
-		}
-
-		//return r;
-	}
-
-	static int pow (int a, int b)
-	{
-		if ( b == 0)        return 1;
-		if ( b == 1)        return a;
-		if (b % 2 == 0)    return     pow ( a * a, b/2); //even a=(a^2)^b/2
-		else                return a * pow ( a * a, b/2); //odd  a=a*(a^2)^b/2
-
-	}
-
-
-	public void print() {
-		for(int i = 1; i < v.length; i++) {
-			int num = v[i].getNumeratorAsInt();
-			int den = v[i].getDenominatorAsInt();
-			print(num);
-			print(den);
-		}
-	}
-
-	public static void print(int num) {
-		int bit = 15;
-		for(int j = 0; j < 4; j++) {
-			for(int k = 0; k < 4; k++) {
-				if((num & pow(2, bit)) > 0) {
-					//System.out.print("1");
-				} else {
-					//System.out.print("0");
-				}
-				bit--;
-			}
-			//System.out.println();
-		}
-	}
-
-	public static void main(String[] args) {
-		print(128);
-
-		System.out.println("---------------");
-		for (int i = 1; i <= 10; i++) {
-			NoteG ng = new NoteG(21+i, i, null);
-			System.out.println("B" + (2*i-1) + " = " + ng.run());
 		}
 	}
 }

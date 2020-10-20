@@ -2,12 +2,6 @@ package se.kth.castor;
 
 import processing.core.PApplet;
 
-import java.util.function.Consumer;
-
-/**
- * Hello world!
- *
- */
 public class App  extends PApplet {
     static int n = 0;
     static int width = 120;
@@ -58,16 +52,9 @@ public class App  extends PApplet {
     }
 
     public static void main(String[] args) {
-        int a = 8;
+        int a = 5;
         System.out.println("n="+a);
         n = a;
         PApplet.main("se.kth.castor.App");
-        //n = 6;
-        //PApplet.main("se.kth.castor.App");
-        /*for (int a = 1; a < 11; a++) {
-            System.out.println("n="+a);
-            n = a;
-            PApplet.main("se.kth.castor.App");
-        }*/
     }
 }
