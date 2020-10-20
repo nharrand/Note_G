@@ -7,11 +7,14 @@ The left most columns contains the input parameter, the middle section contains 
 These last columns contain the Bernouilli's number that the program is designed to compute.
 
 These values are represented in the knitted pattern. Each value is a fraction of natural number.
-0 / 1 is represented as ![0 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_0.png).
-1 / 1 as ![1 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_1.png).
 
-2 / 1 as ![2 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_2.png).
-1 / 2 as ![1 over 2](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_1_2.png).
+| Number | Representation |
+---------------------------
+| 0 / 1 | ![0 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_0.png) |
+| 1 / 1 | ![1 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_1.png) |
+| 2 / 1 | ![2 over 1](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_2.png) |
+| 1 / 2 | ![1 over 2](https://github.com/nharrand/Note_G/raw/main/java/ex/Example_1_2.png) |
+---------------------------
 
 You can observe the first line and see the numbers one the first three columns: 1 2 1 and the first value computed by the program 2 2 and 2.
 
