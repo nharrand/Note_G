@@ -1,5 +1,13 @@
 
-# Note G
+# Ada's Sol
+
+"The Analytical Engine weaves algebraic patterns, just as the Jacquard loom weaves flowers and leaves." ― adapted from Ada Lovelace’s notes from 1842.
+
+The Analytical Engine is considered to be one of the very first computer designs. Although it was never fully built, its design was inspired by the Jacquard Loom, and data was inputted into the machine via punchcards - a technique that is still used today in modern knitting and weaving machines. 
+
+To demonstrate how the Analytical Engine worked, Ada Lovelace wrote examples of programs that the machine could run. This knitted piece represents a well-known example, Note G. Based on this work, Lovelace is widely considered to be the first computer programmer, and her method is recognized as the world's first computer program.
+
+![knit](knit1.jpg)
 
 Note G computes the first n odd Bernouilli numbers. The note shows a table where columns are variables, and each line indicates how each step of the program changes the values held by each of the variables.
 
@@ -17,7 +25,7 @@ These values are represented in the knitted pattern. Each value is a fraction of
 
 You can observe the first line and see the numbers one the first three columns: 1 2 1 and the first value computed by the program 2 2 and 2.
 
-After many steps the program computes the first Bernouilli number (1/6) in column 21. This value will then never change. Then the third Bernouilli nimber (-1 / 30) appears in column 22 and so on.
+After many steps the program computes the first Bernouilli number (1/6) in column 21. This value will then never change. Then the third Bernouilli number (-1 / 30) appears in column 22 and so on.
 On the last line, at the last column the value of the fifth Bernouilli number (5 / 66) appears.
 
 | Number | Representation |
