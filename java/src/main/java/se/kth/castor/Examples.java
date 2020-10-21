@@ -6,7 +6,7 @@ import processing.core.PApplet;
 public class Examples  extends PApplet {
 	static BigFraction n = new BigFraction(0);
 	static int width = 120;
-	static int heigth = 0;
+	static int height = 0;
 	static int[] hs = {56, 168, 368, 656, 1032, 1496, 2048, 2688, 3416, 4232, 4232};
 	static int[] hs2 = {56, 176, 376, 664, 1040, 1504, 2056, 2696, 3424, 4240, 4240};
 

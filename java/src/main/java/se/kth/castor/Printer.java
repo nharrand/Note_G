@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class Printer {
 	int cellWidth = 4;
-	int cellHeigth = 4;
+	int cellHeight = 4;
 	int line = 0;
 	int cell = 0;
 	Runnable setColorT;
@@ -32,7 +32,7 @@ public class Printer {
 		for(int i = 1; i < v.length; i++) {
 			print(v[i]);
 		}
-		maxRes = (cell * cellWidth) + "x" + (2 * line * cellHeigth);
+		maxRes = (cell * cellWidth) + "x" + (2 * line * cellHeight);
 		newLine();
 	}
 
@@ -50,7 +50,7 @@ public class Printer {
 				} else {
 					setColorF.run();
 				}
-				printPixel.accept(new Pixel(cell * cellWidth + k, 2 * line * cellHeigth + j));
+				printPixel.accept(new Pixel(cell * cellWidth + k, 2 * line * cellHeight + j));
 				bit--;
 			}
 		}
@@ -62,11 +62,11 @@ public class Printer {
 				} else {
 					setColorF.run();
 				}
-				printPixel.accept(new Pixel(cell * cellWidth + k, (2 * line + 1) * cellHeigth + j));
+				printPixel.accept(new Pixel(cell * cellWidth + k, (2 * line + 1) * cellHeight + j));
 				bit--;
 			}
 		}
-		lastPixel = (cell * cellWidth + 3) + "," + ((2 * line + 1) * cellHeigth + 3);
+		lastPixel = (cell * cellWidth + 3) + "," + ((2 * line + 1) * cellHeight + 3);
 		cell++;
 	}
 
